@@ -82,6 +82,7 @@ section {
   color: rgb(32, 32, 32);
   font-weight: 800;
   text-align: center;
+  margin-top: 5rem;
 }
 .heading span {
   color: rgb(115, 3, 167);
@@ -346,7 +347,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: rgb(255, 255, 255);
+  background: #fff;
 }
 .about .row {
   display: flex;
@@ -361,7 +362,7 @@ header .navbar ul li a:hover {
 }
 .about .row .image img {
   margin: 4rem;
-  width: 30rem;
+  width: 40rem;
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -387,7 +388,7 @@ header .navbar ul li a:hover {
   margin-top: 1rem;
 }
 .about .row .content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1.5rem;
   font-family: "Nunito";
   font-weight: 600;
@@ -396,7 +397,7 @@ header .navbar ul li a:hover {
 .about .row .content .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 5rem;
   font-family: "Nunito";
   font-weight: 600;
 }
@@ -407,7 +408,8 @@ header .navbar ul li a:hover {
   color: #011aff;
 }
 .resumebtn {
-  margin-top: 6rem;
+  margin-top: -10rem;
+  margin-left: 80rem;
 }
 .resumebtn .btn {
   padding: 1.7rem 3rem;
@@ -461,16 +463,16 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: linear-gradient(to bottom, #d9d2e0, #815bcd);
 }
 .skills h2 {
   color: #fff;
 }
 .skills .heading span {
-  color: rgb(255, 230, 0);
+  color: rgb(28, 26, 0);
 }
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
+  background: rgba(170, 170, 250, 0.4);
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
@@ -496,6 +498,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(0, 0, 0, 0.9) !important;
 }
+
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;
@@ -639,11 +642,11 @@ header .navbar ul li a:hover {
 /* education media queries ends*/
 /* education section ends */
 
-/* work section starts */
+/* work section starts 
 .work {
-  /* background: #010124; */
+  background: #010124;
   background: linear-gradient(to bottom, #000031, #00002c);
-}
+} */
 .work h2 {
   color: #fff;
   padding: 1rem;
@@ -757,9 +760,14 @@ header .navbar ul li a:hover {
 .work .viewall .btn:hover i {
   transform: translateX(5px);
 }
-/* work section ends */
+/* work section ends
 
 /* experience section starts */
+
+.experience {
+  background: #ffffff;
+  min-height: 50vh;
+}
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -931,8 +939,16 @@ header .navbar ul li a:hover {
 /* experience media queries ends */
 /* experience section ends */
 
-
 /* Certificate section styles */
+.Certificate {
+  background: #a7ed9f;
+  background: linear-gradient(
+    90deg,
+    rgba(167, 237, 159, 1) 15%,
+    rgba(201, 240, 255, 1) 78%
+  );
+  min-height: 60vh;
+}
 .certificates-container {
   display: flex;
   flex-wrap: wrap;
@@ -1033,7 +1049,7 @@ header .navbar ul li a:hover {
   padding: 2.5rem 2rem;
 }
 .contact .content .image-box {
-  max-width: 60%;
+  max-width: 100%;
   margin-left: 4rem;
 }
 .contact .content .image-box img {
@@ -1042,7 +1058,7 @@ header .navbar ul li a:hover {
   position: relative;
 }
 .contact .content form {
-  width: 45%;
+  width: 50%;
   margin-right: 3.5rem;
 }
 form .form-group {
@@ -1148,7 +1164,6 @@ form .button-area {
 .button-area button:hover i {
   left: 8px;
 }
-
 
 /* contact section media queries starts */
 @media (max-width: 900px) {

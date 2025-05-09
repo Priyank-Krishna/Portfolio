@@ -39,9 +39,9 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        emailjs.init("xJR4nH16r3JOlcXom");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.sendForm('service_xal3gks', 'template_qknax7g', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -52,6 +52,8 @@ $(document).ready(function () {
             });
         event.preventDefault();
     });
+
+    
     // <!-- emailjs to mail contact form data -->
 
 });
@@ -59,7 +61,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Priyank Krishna";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
