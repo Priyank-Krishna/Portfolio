@@ -526,6 +526,17 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
+    <script>
+  document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'c')) return false;
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) return false;
+  };
+</script>
+
+    <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
 
     <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
